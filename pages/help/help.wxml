@@ -1,0 +1,5 @@
+<view class='about'>
+   <text class='aboutTitle'>关于股票预测\n</text>
+   <text class='aboutE'>预测算法采用LSTM神经网络，训练集合采用股票过去十年的相关数据，进行运算，预测集合为当前一年的数据，预测未来五天的股票走势</text>
+</view>
+

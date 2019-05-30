@@ -1,0 +1,16 @@
+
+<view class='text-box'>
+  <view class='title-text'> 自选股 </view>
+</view>
+<view wx:if="{{allCode.length==0}}">
+  <view class='stock-name'>暂无自选股!</view>
+</view>
+<view wx:for="{{allCode}}" wx:key wx:for-item="item" bindtap='touch_choose' data-select='{{item.code}}'>
+  <view class='stock-name'>{{item.name}}
+   <button class='delete' bindtap='delete_option' id='{{item.code}}'>
+     删除
+   </button>
+  </view>
+  <view class='stock-code'>{{item.code}}</view>
+  <view class='stock-line'></view>
+</view>

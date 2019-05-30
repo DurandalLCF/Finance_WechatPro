@@ -1,0 +1,41 @@
+{
+  "pages": [
+    
+    "pages/homepage/homepage",
+    "pages/mine/mine",
+    "pages/get/get",
+    "pages/help/help",
+    "pages/like/like"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1D2328",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "股票预测",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#1D2328",
+    "color": "#666E79",
+    "selectedColor": "#3283DC",
+    "list": [
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "首页",
+        "iconPath": "images/choose-no.png",
+        "selectedIconPath": "images/choose-ch.png"
+      },
+      {
+        "pagePath": "pages/like/like",
+        "text": "自选股",
+        "iconPath": "images/收藏.png",
+        "selectedIconPath": "images/收藏1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine-no.png",
+        "selectedIconPath": "images/mine-ch.png"
+      }
+    ]
+  }
+}

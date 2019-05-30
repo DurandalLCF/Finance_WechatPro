@@ -1,0 +1,48 @@
+page {
+  display: block;
+  min-height: 100%;
+  background-color: #F0EFF4;
+}
+
+.user-box{
+  display: flex;
+  height: 200rpx;
+  background-color: white;
+}
+.user-iamge{
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 30rpx;
+  background-color: white;
+  width: 140rpx; 
+  height: 140rpx;
+}
+.user-nickName{
+  margin-top: 50rpx;
+  margin-left: 35%;
+  font-size : 45rpx;
+  font-family :STKaiti;
+  color: black;
+}
+.ban-line{
+  height: 20rpx;
+  background-color: #F0EFF4;
+}
+
+.about-tip{
+  height: 80rpx;
+  background-color: white;
+}
+.about-icon{
+  position: absolute;
+  margin-left: 5%;
+  width: 40rpx; 
+  height: 40rpx;
+  margin-top: 20rpx;
+}
+.about-text{
+  position: absolute;
+  margin-top: 20rpx;
+  margin-left: 15%;
+  font-size: 34rpx;
+}

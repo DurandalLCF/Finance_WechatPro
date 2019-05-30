@@ -1,0 +1,41 @@
+<view class="center">
+  <image src="{{imageUrl}}" ></image>
+</view>
+
+<view class="center-text">
+  <text>{{codes.Name}}\t[\t{{codes.Code}}\t]</text>
+  <button class="option-button"  bindtap='self_option' id='{{codes.Code}}'>{{chosen}}</button>
+</view>
+
+<view id="panel" class="flex-column">
+  <view class="flex-cell flex-row">
+    <text class="flex-cell flex-row">日期</text>
+    <text class="flex-cell flex-row">{{days.day1}}</text>
+    <text class="flex-cell flex-row">{{days.day2}}</text>
+    <text class="flex-cell flex-row">{{days.day3}}</text>
+    <text class="flex-cell flex-row">{{days.day4}}</text>
+    <text class="flex-cell flex-row">{{days.day5}}</text>
+  </view>
+
+  <view class="flex-row flex-cell">
+    <text class="flex-cell flex-row">最高价</text>
+    <text class="flex-cell flex-row">{{codes.D1H}}</text>
+    <text class="flex-cell flex-row">{{codes.D2H}}</text>
+    <text class="flex-cell flex-row">{{codes.D3H}}</text>
+    <text class="flex-cell flex-row">{{codes.D4H}}</text>
+    <text class="flex-cell flex-row">{{codes.D5H}}</text>
+  </view>
+
+  <view class="flex-row flex-cell">
+    <text class="flex-cell flex-row">最低价</text>
+    <text class="flex-cell flex-row">{{codes.D1l}}</text>
+    <text class="flex-cell flex-row">{{codes.D2l}}</text>
+    <text class="flex-cell flex-row">{{codes.D3l}}</text>
+    <text class="flex-cell flex-row">{{codes.D4l}}</text>
+    <text class="flex-cell flex-row">{{codes.D5l}}</text>
+  </view>
+</view>
+
+<view class="center">
+  <text>历史误差率：{{codes.loss}}%</text>
+</view>

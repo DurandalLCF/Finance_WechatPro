@@ -1,0 +1,19 @@
+
+<!-- <view wx:if="{{avatar}}" class='user-box'>
+  <image class='user-iamge' src='{{avatar}}'></image>
+  <text class='user-nickName'>{{nickName}}</text>
+</view>
+<view wx:else class='user-box'>
+  <image class='user-iamge' src='/images/user.png'></image>
+  <text class='user-nickName'>股票预测小能手</text>
+</view> -->
+<view class='user-box'>
+<open-data type="userAvatarUrl" class='user-iamge'></open-data>
+<open-data type="userNickName" class='user-nickName'></open-data>
+</view>
+<view class='ban-line'></view>
+
+<view class='about-tip' bindtap='touch_search_help'>
+  <image class='about-icon' src='/images/help.png'>关于股票预测</image>
+  <view class='about-text'>关于股票预测</view>
+</view>

@@ -1,0 +1,45 @@
+<scroll-view class="bigWrap" scroll-y="true" scroll-top="{{scrollTop}}"   bindscroll="scroll"  style="position: absolute; left: 0; top:0; bottom: 0; right: 0;">
+
+  <view class='title-box'>
+    <view class="top-bar">
+      <icon class='search-icon' type='search' size='16'></icon>
+      <input class="input-search" bindinput ='input_code' maxlength="6" placeholder="{{inputPlace}}" value='{{clearInput}}'/>
+      <icon wx:if = "{{userInput}}" class='clear-icon' type='clear' size='16' catchtap='clear_input'></icon>
+    </view>
+    <view class='text-box'>
+       <view class='title-text'>{{titleTips}}</view>
+    </view>
+  </view>
+ <view class='deTop'></view>
+
+  <view wx:if='{{show20}}'>
+     <view wx:for="{{code20}}" wx:for-item="item" bindtap='touch_choose' wx:key data-select='{{item.code}}'>
+        <view class='stock-name'>
+           {{item.name}}
+           <button class='option-button' bindtap='self_option' id='{{item.code}}{{show20}}'>{{item.chosen}}</button>
+        </view>
+        <view class='stock-code'>
+           {{item.code}}
+        </view>
+        <view class='stock-line'></view>
+     </view>
+  </view>
+  <view wx:else>
+     <view wx:for="{{showCode}}" wx:for-item="item" bindtap='touch_choose' data-select='{{item.code}}' wx:key>
+        <view class='stock-name'>
+           {{item.name}}
+           <button class='option-button' bindtap='self_option' id='{{item.code}}{{show20}}'>{{item.chosen}}</button>
+        </view>
+        <view class='stock-code'>
+           {{item.code}}
+        </view>
+        <view class='stock-line'></view>
+     </view>
+  </view>
+
+  <view class='com-widget-goTop' bindtap="go_top" wx:if="{{floorStatus}}">
+      <view class='icon-gotop'>
+            顶部
+      </view>
+  </view>
+</scroll-view>

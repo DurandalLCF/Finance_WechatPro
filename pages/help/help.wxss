@@ -1,0 +1,7 @@
+/* pages/help/help.wxss */
+.about {
+  font-family: STKaiti;
+}
+.aboutTitle {
+  text-align: center;
+}

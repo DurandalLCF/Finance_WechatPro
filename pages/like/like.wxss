@@ -1,0 +1,58 @@
+
+page {
+  display: block;
+  min-height: 100%;
+  background-color: #101318;
+}
+
+.text-box{
+  height: 70rpx;
+  background-color: #1D2228;
+  padding-top: 10rpx;
+}
+.title-text{
+  color:  #3D81CC;
+  margin-left: 5%;
+  font-size: 35rpx;
+  background-color: #1D2228;
+}
+
+.stock-line{
+  height: 3rpx;
+  margin-top: 12rpx;
+  background-color: #666E79;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.stock-name{
+  display: flex;
+  margin-top: 18rpx;
+  margin-left: 5%;
+  font-size : 35rpx;
+  font-family :STKaiti;
+  color: #FFFFFF;
+}
+.stock-code{
+  margin-left: 5%;
+  font-size : 30rpx;
+  font-family :STKaiti;
+  color: #686E7A;
+}
+/* .delete {
+  margin-top: 0%;
+  width: 5%;
+  font-size: 15rpx;
+  margin-right: 5%;
+  background-color: #101318;  
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.delete {
+  width: 25%;
+  font-size: 25rpx;
+  margin-right: 5%;
+  background-color: #3A3E47;
+  color: white;
+}
